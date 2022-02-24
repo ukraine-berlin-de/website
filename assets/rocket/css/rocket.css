@@ -1,0 +1,80 @@
+.rocket {
+  position: fixed;
+  left: 7vw;
+  top: 100vh;
+  width: 7vw;
+  z-index: 2000;
+  transform: rotate(15deg);
+  opacity: 0.3;
+}
+
+.planet {
+  position: fixed;
+  z-index: 1999;
+  opacity: 0.5;
+}
+
+.planet_0 {
+  width: 5vw;
+  left: 15vw;
+  top: -7vw;
+}
+
+.planet_1 {
+  width: 8vw;
+  left: 4vw;
+  top: -10vw;
+}
+
+.planet_2 {
+  width: 20vw;
+  right: 4vw;
+  top: -24vw;
+}
+
+.planet_3, .planet_4 {
+  display: none; /* for now */
+}
+
+.rocket-launch {
+  top: 100vh;
+  animation: rocketLaunch 3s normal 1.5s ease-in;
+}
+
+@keyframes rocketLaunch {
+  from {  transform: translateY(0vh) rotate(-5deg) rotateX(-5deg)  }
+  to   {  transform: translateY(-160vh) translatex(10vw) rotate(15deg) scale(1.5) rotateZ(0deg) }
+}
+
+.planet-sky-0 {
+  top: -7vw;
+  animation: planetSky0 12s normal 1s ease-out;
+}
+
+@keyframes planetSky0 {
+  from {  transform: translateY(0vh) scale(0.8)  }
+  to   {  transform: translateY(130vh) scale(0.3) }
+}
+
+.planet-sky-1 {
+  top: -8vw;
+  animation: planetSky1 5s normal 2s linear;
+}
+
+@keyframes planetSky1 {
+  from {  transform: translateY(0vh) scale(0.3)  }
+  to   {  transform: translateY(130vh) translateX(-5vw) scale(1.5) }
+}
+
+.planet-sky-2 {
+  top: -24vw;
+  animation: planetSky2 4s normal 0.5s linear;
+}
+
+@keyframes planetSky2 {
+  from {  transform: translateY(0vh) scale(0.5)  }
+  to   {  
+    transform: translateY(150vh) translateX(4vw) rotate(-30deg) scale(1.3);
+    opacity: 0.5;
+  }
+}

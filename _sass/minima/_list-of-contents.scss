@@ -1,0 +1,39 @@
+ol.tutorial {
+    font-size: 1.3em;
+    margin-left: 0;
+}
+
+ol.tutorial, ol.tutorial ol {
+    counter-reset: item;
+    line-height: 1.6em;
+
+    li {
+        display: block;
+
+        &:before {
+            content: counters(item, ".") ". ";
+            counter-increment: item;
+        }
+
+        a {
+            color: darken($brand-color, 10%);
+        }
+    }
+}
+
+ul.hooks {
+    font-size: 1.3em;
+    margin-left: 0;
+}
+
+ul.hooks {
+    line-height: 1.6em;
+
+    li {
+        display: block;
+        a {
+            color: darken($brand-color, 10%);
+        }
+    }
+}
+

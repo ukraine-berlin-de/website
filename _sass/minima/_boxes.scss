@@ -1,0 +1,102 @@
+.example {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 5px;
+//     -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.14);
+// -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.14);
+// box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.14);
+
+    padding: 0.5rem 0.7rem;
+
+    em {
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    &::before {
+        content: 'Beispiel \1F44D';
+        display: table;
+        font-size: 0.8rem;
+        border: 1px solid silver;
+        color: darken($color: silver, $amount: 37%);
+        background-color: lighten($color: #cccccc, $amount: 30%);
+        padding: 0.1rem 0.4rem;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: relative;
+        top: calc(-0.5rem - 1px);
+        left: calc(-0.7rem - 1px);
+        // width: 4.5rem;
+    }
+
+}
+
+.info {
+    background-color: white;
+    border: 1px solid #f7af2b;
+    border-radius: 5px;
+//     -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.14);
+// -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.14);
+// box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.14);
+
+    padding: 0.5rem 0.7rem;
+
+    em {
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    &::before {
+        content: 'Hinweis \1f4a1';
+        display: table;
+        clear: both;
+        font-size: 0.8rem;
+        border: 1px solid #f7af2b;
+        color: darken($color: #f7af2b, $amount: 37%);
+        background-color: lighten($color: #f7af2b, $amount: 30%);
+        padding: 0.1rem 0.4rem;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: relative;
+        top: calc(-0.5rem - 1px);
+        left: calc(-0.7rem - 1px);
+        //width: 4.2rem;
+    }
+}
+
+.definition {
+    background-color: white;
+    border: 1px solid #91e06c;
+    border-radius: 5px;
+//     -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.14);
+// -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.14);
+// box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.14);
+
+    padding: 0.5rem 0.7rem;
+
+    em {
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    &::before {
+        content: 'Definition \1F4D6';
+        display: table;
+        clear: both;
+        font-size: 0.8rem;
+        border: 1px solid #91e06c;
+        color: darken($color: #91e06c, $amount: 37%);
+        background-color: lighten($color: #91e06c, $amount: 30%);
+        padding: 0.1rem 0.4rem;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: relative;
+        top: calc(-0.5rem - 1px);
+        left: calc(-0.7rem - 1px);
+        // width: 5rem;
+    }
+}
+
+.warning {
+
+}
